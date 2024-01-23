@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap}"
+    rel="stylesheet">
+    
+    <!-- Fontawesome -->
+    <link th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css}" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" type="text/css">
+</head>
+<body>
+	<div class="h-100 d-flex justify-content-center align-items-center"
+	th:style="'background: url(/assets/img/LoginBackground.jpg) no-repeat center center; background-size: cover'">
+		<form style="width: 500px; border-radius: 2rem" class="bg-light p-4">
+		  <!-- wellcome input -->
+		  <h2 style="text-align: center; font-size: 2rem; font-weight: bold; color: #771200; margin-bottom: 14px">Clothes Shop</h2>
+		  <!-- Email input -->
+		  <div class="form-outline mb-4">
+		    <label class="form-label" style="color: #771200; font-weight: bold" for="email">Email đăng nhập</label>
+		    <input type="email" id="email" name="email" class="form-control" placeholder="khachhang@gmail.com"/>
+		  </div>
+		
+		  <!-- Password input -->
+		  <div class="form-outline mb-4">
+		    <label class="form-label" style="color: #771200; font-weight: bold" for="password">Mật khẩu</label>
+		    <input type="password" id="password" name="password" class="form-control" placeholder="123456"/>
+		  </div>
+		
+		  <!-- Submit button -->
+		  <button type="button" style="border: none; background-color: #111111; font-weight: bold" class="btn btn-primary btn-block mb-4 hover-zoom">Đăng ký</button>
+		
+		  <!-- Login buttons -->
+		  <div class="text-center">
+		    <p style="color: #771200; font-weight: bold">Đã có tài khoản? <a href="dang-nhap" style="color: #771200; text-decoration: underline;">Đăng nhập</a></p>
+		  </div>
+		  <p style="color: #771200; font-weight: bold; text-align: center">Quay lại <a href="trang-chu" style="color: #771200; text-decoration: underline;">Trang chủ</a></p>
+		</form>
+	</div>
+
+</body>
+</html>

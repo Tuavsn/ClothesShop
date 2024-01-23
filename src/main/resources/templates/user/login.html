@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link th:href="@{https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap}"
+    rel="stylesheet">
+    
+    <!-- Fontawesome -->
+    <link th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css}" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" type="text/css">
+</head>
+<body>
+	<div class="h-100 d-flex justify-content-center align-items-center"
+	th:style="'background: url(/assets/img/LoginBackground.jpg) no-repeat center center; background-size: cover'">
+		<form style="width: 500px; border-radius: 2rem" class="bg-light p-4">
+		  <!-- wellcome input -->
+		  <h2 style="text-align: center; font-size: 2rem; font-weight: bold; color: #771200; margin-bottom: 14px">Clothes Shop</h2>
+		  <!-- Email input -->
+		  <div class="form-outline mb-4">
+		    <label class="form-label" style="color: #771200; font-weight: bold" for="email">Email đăng nhập</label>
+		    <input type="email" id="email" name="email" class="form-control" placeholder="khachhang@gmail.com" />
+		  </div>
+		
+		  <!-- Password input -->
+		  <div class="form-outline mb-4">
+		    <label class="form-label" style="color: #771200; font-weight: bold" for="password">Mật khẩu</label>
+		    <input type="password" id="password" name="password" class="form-control" placeholder="123456"/>
+		  </div>
+		
+		  <!-- 2 column grid layout for inline styling -->
+		  <div class="row mb-4">
+		    <div class="col d-flex justify-content-center">
+		      <!-- Checkbox -->
+		      <div class="form-check">
+		        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+		        <label class="form-check-label" style="color: #771200; font-weight: bold" for="form2Example31"> Ghi nhớ đăng nhập </label>
+		      </div>
+		    </div>
+		
+		    <div class="col">
+		      <!-- Simple link -->
+		      <a href="quen-mat-khau" style="color: #771200; font-weight: bold">Quên mật khẩu?</a>
+		    </div>
+		  </div>
+		
+		  <!-- Submit button -->
+		  <button type="button" style="border: none; background-color: #111111; font-weight: bold" class="btn btn-primary btn-block mb-4 hover-zoom">Đăng nhập</button>
+		
+		  <!-- Register buttons -->
+		  <div class="text-center">
+		    <p style="color: #771200; font-weight: bold">Chưa có tài khoản? <a href="dang-ky" style="color: #771200; text-decoration: underline;">Đăng ký</a></p>
+		    <p style="color: #771200; font-weight: bold">Hoặc đăng nhập với:</p>
+		    <button type="button" class="btn btn-link btn-floating mx-1">
+		      <i style="color: #771200; font-size: 1.6rem" class="fa-brands fa-facebook-f"></i>
+		    </button>
+		
+		    <button type="button" class="btn btn-link btn-floating mx-1">
+		      <i style="color: #771200; font-size: 1.6rem" class="fab fa-google"></i>
+		    </button>
+		    <p style="color: #771200; font-weight: bold; text-align: center">Quay lại <a href="trang-chu" style="color: #771200; text-decoration: underline;">Trang chủ</a></p>
+		  </div>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -20,6 +20,6 @@ public class UserController {
 	@GetMapping("/findAll")
 	public String index(Model model) {
 		model.addAttribute("message", "helloworld");
-		return "user/malefashion-master/index";
+		return "user/index";
 	}
 }
